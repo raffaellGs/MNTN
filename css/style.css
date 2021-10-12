@@ -1,0 +1,360 @@
+@font-face {
+    font-family: 'light';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Chronicle\ Display\ Black.woff') format('woff');
+    } 
+    
+@font-face {
+    font-family: 'semiBold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Chronicle Display Semibold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Roman';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Chronicle Display Roman.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Vare';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/VarelaRound-Regular.ttf') format('ttf');
+}
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+body{
+    background: var(--bg);
+}
+
+:root{
+    --golden: #FBD784;
+    --white: #fff;
+    --bg: #0B1D26;
+}
+.container{
+    max-width: 1920px;
+    overflow: hidden;
+    position: relative;
+
+}
+.backgroundMT{
+    background: linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%, #0B1D26 108.93%), url(../image/HG.png);
+    background-repeat: no-repeat;
+    height: 1513px;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+/* inicio do header */
+header{
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 50px 80px;
+    z-index: 99999;
+}
+header .logo h1{
+    color: var(--white);
+    font-size: 50px;
+    font-family: 'Roman';
+}
+/* final do header */
+
+/* Inicio da NavBAr */
+
+nav.nav-desktop ul{
+    display: flex;
+    list-style: none;
+}
+nav.nav-desktop ul li{
+    margin: 0 25px;
+}
+nav.nav-desktop ul li a{
+    color: var(--white);
+    text-decoration: none;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 20px;
+    display: block;
+    position: relative;
+}
+nav.nav-desktop ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    border-radius: 5px;
+    transform: translateX(-50%);
+    background-color: var(--golden);
+    transition: width 0.3s;
+}
+nav.nav-desktop ul li a:hover::after{
+    width: 50%;
+}
+
+.acount a{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 20px;
+}
+.acount i{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+/* Final da NavBAr */
+
+/* Sessao  socialMedia */
+.socialMedia{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    color:var(--white);
+    top: 360px;
+    align-items: center;
+    z-index: 9999;
+    margin-left: 50px;
+
+}
+
+.socialMedia p{
+    color: var(--white);
+    font-size: 20px;
+    transform: rotate(-269deg);
+    margin-bottom: 30px;
+}
+.socialMedia .icons a{
+    color: var(--white);
+    font-size: 20px;
+    z-index: 9999;
+    display: block;
+    margin-bottom: 8px;
+}
+/* final da SocialMedia */
+
+/* inicio boxCentralInfo */
+.boxCentralInfo{
+    position: absolute;
+    top: 24%;
+    left: 45%;
+    max-width: 950px;
+    -ms-transform: translate(-24%, -45%);
+    transform: translate( -24%, -45%);
+    z-index: 9999;
+
+}
+
+.boxCentralInfo p{
+    color: var(--golden);
+    font-family: 'light';
+    text-transform: uppercase;
+    margin-left: 90px;
+    position: relative;
+}
+.boxCentralInfo p::after{
+    content: '';
+    position: absolute;
+    width: 72px;
+    height: 2px;
+    background-color: var(--golden);
+    top: 7px;
+    left: -89px;
+
+}
+
+.boxCentralInfo h1{
+    color: var(--white);
+    font-size: 75px;
+    font-family: 'Roman';
+    font-weight: lighter;
+}
+/* final boxCentralInfo */
+
+
+.backgroundMontanhaMG img{
+    position: absolute;
+    height: 1422px;
+    width: 1920px;
+    left: 0px;
+    top: 464px;
+}
+
+.backgroundMontanhaGreenVG {
+    position: absolute;
+    height: 926px;
+    width: 1920px;
+    left: 0px;
+    top: 768px;
+}
+.overlay{
+    position: absolute;
+    background: linear-gradient(180deg, rgba(11, 29, 38, 0) -0.71%, #0B1D26 60.67%);
+    bottom: -250px;
+    left: 0;
+    width: 100%;
+    height: 700px;
+}
+.section1{
+    position: absolute;
+    height: 3040px;
+    max-width: 1462px;
+    width: 100%;
+    left: 229px;
+    top: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
+
+}
+.box-infos{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-around;
+}
+.text-box{
+    height: 439px;
+    width: 632px;
+}
+.text-box h3{
+    color: var(--golden);
+    font-family: 'light';
+    text-transform: uppercase;
+    margin-left: 90px;
+    position: relative;
+    margin-bottom: 8px;
+}
+.text-box h3::after{
+    content: '';
+    position: absolute;
+    width: 72px;
+    height: 2px;
+    background-color: var(--golden);
+    top: 9px;
+    left: -89px;
+
+}
+.text-box h1{
+    color: var(--white);
+    font-size: 64px;
+    font-family: 'Roman';
+    font-weight: lighter;
+    margin-bottom: 15px;
+}
+.text-box p{
+    color: var(--white);
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 32px;
+}
+.text-box a{
+    color: var(--golden);
+    font-size: 18px;
+    text-decoration: none;
+}
+.text-box a span{
+    margin-left: 8px;
+    font-size: 25px;
+}
+.text-box span h1{
+    color: var(--white);
+    position: absolute;
+    left: 60px;
+    top: 70px;
+    opacity: 9%;
+    font-family: 'semiBold';
+    font-size: 130px;
+}
+span.N02{
+    position: absolute;
+    left: 700px;
+    top: 0px;
+}
+
+.box-infos:nth-child(2n){
+    flex-direction: row-reverse
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+}
+
+.boxMTN h1{
+    color: var(--golden);
+    margin-bottom: 10px;
+}
+.boxMTN p{
+    color: var(--white);
+    margin-bottom: 10px;
+    line-height: 25px;
+}
+
+.blog ul{
+list-style: none;
+}
+
+.blog h1{
+    color: var(--golden);
+    margin-bottom: 10px;
+}
+
+.blog a{
+    color: var(--white);
+    margin-bottom: 10px;
+    text-decoration: none;
+    line-height: 25px;
+}
+
+.ONMNTM h1{
+    color: var(--golden);
+    margin-bottom: 10px;
+}
+.ONMNTM a{
+    color: var(--white);
+    margin-bottom: 10px;
+    text-decoration: none;
+    line-height: 25px;
+}
+.ONMNTM ul{
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
